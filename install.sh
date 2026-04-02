@@ -14,7 +14,6 @@ echo "[                        ]"
 echo "[————————————————————————]"
 sleep 2
 clear
-printf '\e]11;#2e2e2e\a'
 PS1="\[\e[1;37m\]Terminal@MkDt \[\e[0m\]"
 EOF
 
