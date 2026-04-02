@@ -5,6 +5,7 @@ sleep 2
 # os símbolos antes de escrever no arquivo.
 cat <<'EOF' >> ~/.bashrc
 clear
+printf '\e]11;#2e2e2e\a'
 echo "[Plugin, MkDt Form]"
 echo
 echo "[————————————————————————]"
@@ -15,12 +16,9 @@ echo "[————————————————————————]
 sleep 0.15
 echo
 sleep 0.15
-echo 1=0/5
 sleep 0.15
-echo perm
 sleep 0.15
 clear
-printf '\e]11;#2e2e2e\a'
 PS1="\[\e[1;37m\]Terminal@MkDt \[\e[0m\]"
 EOF
 clear
