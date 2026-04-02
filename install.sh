@@ -12,11 +12,17 @@ echo "[                        ]"
 echo "[ termux (Mkdt Edition)  ]"
 echo "[                        ]"
 echo "[————————————————————————]"
-sleep 1
+sleep 0.15
+echo
+sleep 0.15
+echo 1=0/5
+sleep 0.15
+echo perm
+sleep 0.15
 clear
+printf '\e]11;#2e2e2e\a'
 PS1="\[\e[1;37m\]Terminal@MkDt \[\e[0m\]"
 EOF
-printf '\e]11;#2e2e2e\a'
 clear
 echo "Turning off the Termux section..."
 sleep 2
