@@ -1,20 +1,24 @@
-echo [*] customizing terminal...
+echo "[*] customizing terminal..."
 sleep 2
-cat <<EOF>> ~/.bashrc
+
+# Usamos aspas simples 'EOF' para evitar que o shell tente processar 
+# os símbolos antes de escrever no arquivo.
+cat <<'EOF' >> ~/.bashrc
 clear
-echo [Plugin, MkDt Form]
+echo "[Plugin, MkDt Form]"
 echo
-echo [————————————————————————]
-echo [                        ]
-echo [ termux (Mkdt Edition)  ]
-echo [                        ]
-echo [————————————————————————]
-sleep 10
+echo "[————————————————————————]"
+echo "[                        ]"
+echo "[ termux (Mkdt Edition)  ]"
+echo "[                        ]"
+echo "[————————————————————————]"
+sleep 2
 clear
 printf '\e]11;#2e2e2e\a'
-PS1="Terminal@MkDt "
+PS1="\[\e[1;37m\]Terminal@MkDt \[\e[0m\]"
 EOF
+
 clear
-echo Turning off the Termux section...
-sleep 10
+echo "Turning off the Termux section..."
+sleep 2
 exit
