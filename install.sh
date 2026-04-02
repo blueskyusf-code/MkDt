@@ -9,6 +9,7 @@ echo [                        ]
 echo [ termux (Mkdt Edition)  ]
 echo [                        ]
 echo [————————————————————————]
+sleep 10
 clear
 printf '\e]11;#2e2e2e\a'
 PS1="Terminal@MkDt "
