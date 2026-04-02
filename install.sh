@@ -17,4 +17,4 @@ EOF
 clear
 echo Turning off the Termux section...
 sleep 10
-logout
+exit
