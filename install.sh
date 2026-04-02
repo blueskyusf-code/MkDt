@@ -1,8 +1,7 @@
 echo "[*] customizing terminal..."
 sleep 2
 
-# Usamos aspas simples 'EOF' para evitar que o shell tente processar 
-# os símbolos antes de escrever no arquivo.
+
 cat <<'EOF' >> ~/.bashrc
 clear
 printf '\e]11;#2e2e2e\a'
