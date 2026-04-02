@@ -13,3 +13,8 @@ sleep 10
 clear
 printf '\e]11;#2e2e2e\a'
 PS1="Terminal@MkDt "
+EOF
+clear
+echo Turning off the Termux section...
+sleep 10
+logout
